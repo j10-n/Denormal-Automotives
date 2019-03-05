@@ -4,7 +4,7 @@ CREATE USER normal_user;
 CREATE DATABASE normal_cars WITH OWNER normal_user;
 \timing
 \c normal_cars;
-\i scripts/denormal_data.sql;
+\i scripts/denormal_data.sql;a
 CREATE TABLE makeTable(
     ID SERIAL NOT NULL PRIMARY KEY,
     make_code character varying(125) NOT NULL,
